@@ -11,7 +11,7 @@ angular.module('video-player')
 .service('VideoLibrary', function () {
   this.currentVideo = {value: exampleVideoData[0]};
   this.videos = {value: exampleVideoData};
-
+  this.searchState = {query: 'cats', prevToken: undefined, nextToken: undefined};
     // this.setCurrentVideo(index) {
     //   this.currentVideo = this.videos[index];
     // }
