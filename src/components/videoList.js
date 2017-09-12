@@ -3,7 +3,7 @@ angular.module('video-player')
   bindings: {
     videos: '<'
   },
-  controller: function(VideoLibrary) {
+  controller: function(VideoLibrary, youTube) {
     this.onClick = function (index) {
       VideoLibrary.currentVideo.value = VideoLibrary.videos.value.slice(index, index+1)[0];
       // console.log(index);

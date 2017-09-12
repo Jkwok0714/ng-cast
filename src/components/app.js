@@ -1,8 +1,9 @@
 angular.module('video-player')
 .component('app', {
   // TODO
-  controller: function (VideoLibrary) {
+  controller: function (VideoLibrary, youTube) {
     this.videos = VideoLibrary.videos;
+    youTube.search();
   },
 
   templateUrl: 'src/templates/app.html'

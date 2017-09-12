@@ -9,9 +9,10 @@
   <script src="node_modules/lodash/lodash.js"></script>
   <script src="node_modules/angular/angular.js"></script>
   <script src="src/data/exampleVideoData.js"></script>
+  <script src="src/config/youtube.js"></script>
 </head>
 <body>
-  <app ng-app="video-player">
+  <app ng-app="video-player" ng-init="$ctrl.init()">
     <h5><br/><br/>this message will disappear when <em>app</em> component is correctly rendered<br/><br/><br/></h5>
   </app>
 
